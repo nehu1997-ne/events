@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <div id="sction-1">
+         <h2>heading-1</h2>
+<button id="btn">Hit me</button>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Atque dignissimos inventore perspiciatis repudiandae odit vitae ex earum natus autem eum ut, iste, .</p>
+        </div>
+        <div id="sction-2">
+            <h2 class="hh qqq rrr">heading-2</h2>
+            <!-- <h2 class="dd">heading-2</h2> -->
+   <button id="btn1">Hit me</button>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Atque dignissimos inventore perspiciatis repudiandae odit vitae ex earum natus autem eum ut, iste, .</p>
+           </div>
+           <div id="sction-2">
+            <h2>heading-3</h2>
+   <button id="btn">Hit me</button>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Atque dignissimos inventore perspiciatis repudiandae odit vitae ex earum natus autem eum ut, iste, .</p>
+           </div>
+    </div>
+</body>
+<script>
+document.getElementById("btn1").addEventListener("click",function(){
+    // var h=document.querySelector(".hh")
+    // h.style.color="green"
+    // console.log(this.nextElementSibling)
+    this.previousElementSibling.style.color="red"
+    this.nextElementSibling.style.color="blue"
+    // console.log(this.previousElementSibling)
+    // console.log(this.parentElement)
+this.parentElement.nextElementSibling.children[2].style.color="brown"
+// this.className="bold-btn"
+this.classList.add("bold-bth")
+  console.log(this.className)
+})
+
+
+</script>
+</html>
