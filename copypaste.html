@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Disabled Cut, Copy and Paste</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.myTextBox').bind('copy paste',function(d) {
+    d.preventDefault(); 
+    alert('copy & paste options are disabled !!');
+  });
+});
+</script>
+</head>
+<body>
+<h2>plz try to write something</h2>
+<input type="text"  class="myTextBox " /></br>
+<input type="text"  class="myTextBox"  /></br>
+<input type="text"  class="myTextBox" /></br>
+</body>
+</html>
